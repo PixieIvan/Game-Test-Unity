@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask queEsSuelo;
     [SerializeField] private Transform controladorSuelo;
     [SerializeField] private Vector3 dimensionesCaja;
-    [SerializeField] private bool enSuelo;
+    [SerializeField] public bool enSuelo;
     private bool salto = false;
     [Header("Animacion")]
     private Animator animator;
