@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - Enemies
   - 
   - 
   - 
@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Back
+    uniqueID: 252298079
+    locked: 0
+  - name: Tilemap
+    uniqueID: 495545591
+    locked: 0
+  - name: props 1
+    uniqueID: 2994587781
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: props 2
+    uniqueID: 2922013055
     locked: 0
