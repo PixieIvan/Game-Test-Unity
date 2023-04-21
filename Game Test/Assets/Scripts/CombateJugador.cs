@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CombateJugador : MonoBehaviour
 {
+
     [SerializeField] private float vidaJugador;
     private PlayerMovement playerMovement;
     [SerializeField] private float tiempoPerdidaControl;

@@ -1,15 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class zarigueya : MonoBehaviour
+public class Enemigo : MonoBehaviour
 {
-    public bool enColision = false;
+   public bool enColision = false;
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-
+   private void OnCollisionEnter2D(Collision2D other) 
+   {
         if (other.collider.CompareTag("Player"))
         {
             foreach (ContactPoint2D punto in other.contacts)
@@ -20,24 +18,26 @@ public class zarigueya : MonoBehaviour
                     Destroy(gameObject);
                 }
 
-                else if (punto.normal.y >= -0.9)
+                if (punto.normal.y >= -0.9)
                 {
-                    other.gameObject.GetComponent<CombateJugador>().TomarDaño(1, other.GetContact(0).normal);
+                    other.gameObject.GetComponent<CombateJugador>().TomarDaño((float)0.5, other.GetContact(0).normal);
                 }
+
+                
             }
-            enColision = true;
+            
+                enColision = true;
 
-        }
-        
-    }
+            
 
-   
+        } 
+   }
 
-    private void OnCollisionExit2D(Collision2D other)
+   private void OnCollisionExit2D(Collision2D other) 
     {
         if (other.collider.CompareTag("Player"))
         {
             enColision = false;
-        }
+        }  
     }
 }

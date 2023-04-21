@@ -7,8 +7,10 @@ public class PlayerMovement : MonoBehaviour
 {
     // Seccion de Variables
 
+    
     public static PlayerMovement Instance;
     private Rigidbody2D rb2D;
+    public GameObject enemigo;
     public bool sePuedeMover = true;
     [SerializeField] private Vector2 velocidadRebote;
     [Header("Movimiento")]
@@ -46,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        enemigo = GameObject.FindGameObjectWithTag("Enemie"); // Busca el objeto por etiqueta y asigna la referencia
     }
 
     private void Awake()
@@ -71,6 +74,8 @@ public class PlayerMovement : MonoBehaviour
         movimientoHorizontal = inputX * velociadDeMovimiento;
 
         // Variables para el animator
+
+        
 
         animator.SetFloat("VelocidadX", Mathf.Abs((rb2D.velocity.x)));
         animator.SetFloat("VelocidadY", rb2D.velocity.y);
@@ -108,6 +113,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("enSuelo",enSuelo);
 
+        
         // Ejecucion del movimiento
 
         if (sePuedeMover)
