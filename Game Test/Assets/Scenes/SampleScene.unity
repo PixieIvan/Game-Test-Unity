@@ -1242,11 +1242,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3462225657511385607, guid: 079686754aa3f4ea1a40351cab49fed4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.880506
+      value: 13.96
       objectReference: {fileID: 0}
     - target: {fileID: 3462225657511385607, guid: 079686754aa3f4ea1a40351cab49fed4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.72348595
+      value: -0.81
       objectReference: {fileID: 0}
     - target: {fileID: 3462225657511385607, guid: 079686754aa3f4ea1a40351cab49fed4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1411,7 +1411,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 0}
-  nombreJugador: Player
   indiceNivel: 1
   nuevaPosX: -5.101887
   nuevaPosY: -1.94931
@@ -1516,6 +1515,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5055679779610595785, guid: 0e8375ab2a86a4ca291d09dc8b3cc017, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055679779610595785, guid: 0e8375ab2a86a4ca291d09dc8b3cc017, type: 3}
       propertyPath: deslizando
       value: 0
       objectReference: {fileID: 0}
@@ -1527,17 +1530,21 @@ PrefabInstance:
       propertyPath: velocidadRebote.y
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5055679779610595785, guid: 0e8375ab2a86a4ca291d09dc8b3cc017, type: 3}
+      propertyPath: dimensionesCajaPared.x
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 5055679779610595789, guid: 0e8375ab2a86a4ca291d09dc8b3cc017, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5055679779610595789, guid: 0e8375ab2a86a4ca291d09dc8b3cc017, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.41
+      value: -2.42
       objectReference: {fileID: 0}
     - target: {fileID: 5055679779610595789, guid: 0e8375ab2a86a4ca291d09dc8b3cc017, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.32
+      value: -0.67
       objectReference: {fileID: 0}
     - target: {fileID: 5055679779610595789, guid: 0e8375ab2a86a4ca291d09dc8b3cc017, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15710,7 +15717,7 @@ Tilemap:
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -9, y: -52, z: 0}
-  m_Size: {x: 27, y: 52, z: 1}
+  m_Size: {x: 98, y: 52, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -15948,8 +15955,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 252298079
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.27058825, g: 0.95294124, b: 0.9960785, a: 1}
@@ -16320,7 +16327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1131454297}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.53999996, y: -0.46000004, z: -10}
+  m_LocalPosition: {x: -2.5500002, y: -0.81000006, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

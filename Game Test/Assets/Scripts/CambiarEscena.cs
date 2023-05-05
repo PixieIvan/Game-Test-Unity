@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class CambiarEscena : MonoBehaviour
 {
-    public GameObject jugador; // Referencia al objeto que contiene PlayerMovement
-    public string nombreJugador;
+    public GameObject jugador;
     public int indiceNivel;
     public float nuevaPosX;
     public float nuevaPosY;
@@ -16,15 +15,12 @@ public class CambiarEscena : MonoBehaviour
 
     private void Start()
     {
-        jugador = GameObject.FindGameObjectWithTag("Player"); // Busca el objeto por etiqueta y asigna la referencia
+        jugador = GameObject.FindGameObjectWithTag("Player");
     }
     private void Update()
     {
-
-        
         if (enPuerta && Input.GetKeyDown(KeyCode.E) && jugador.GetComponent<PlayerMovement>().enSuelo)
         {
-                GameObject jugador = GameObject.Find(nombreJugador);
                 CambioDeEscena(indiceNivel);
                 jugador.transform.position = new Vector2(nuevaPosX, nuevaPosY);
         }

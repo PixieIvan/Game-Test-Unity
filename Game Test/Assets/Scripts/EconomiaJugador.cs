@@ -4,14 +4,8 @@ using UnityEngine;
 
 public class EconomiaJugador : MonoBehaviour
 {
-    [SerializeField] private float dineroJugador;
-    private PlayerMovement playerMovement;
-
-    private void Start()
-    {
-        playerMovement = GetComponent<PlayerMovement>();
-    }
-
+    public float dineroJugador;
+   
     public void TomarDinero(float dinero)
     {
         dineroJugador += dinero;
@@ -21,4 +15,6 @@ public class EconomiaJugador : MonoBehaviour
     {
         dineroJugador -= dinero;
     }
+
+
 }
